@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakanda International Airport</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <button type="button" id="btn-back-to-top" class="btn btn-primary btn-floating btn-lg upBtn" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 100 ||
+                document.documentElement.scrollTop > 100
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            window.scrollTo({
+                top: 0,
+                left:0,
+                behavior:"auto"
+            })
+        }
+        </script>
+        <style>
+            body {
+                font-family: sans-serif;
+                font-size: 18px;
+            }
+            .bold {
+                font-weight: 700;
+            }
+            
+            .pointer p {
+                cursor: pointer;
+            }
+        </style>
+    <div class="container-fluid ">
+
+        <div class="container-fluid text-center d-flex align-items-center justify-content-center" style="background-image: url(images/pexels-pixabay-163792.jpg); background-size: cover; height: 200px;">
+
+            <a class="navbar-brand d-block p-2" style="color: #FFF; background-color: rgba(0, 0, 0,0.6); font-weight: 600; font-size: 1.8rem;" href="#">Wakanda International Airport</a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE AIRPORT</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Informations</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Airport Map</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Terminals</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">FLIGHTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Flight Reservations</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li><a class="dropdown-item" href="#">Wakanda Arrivals</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Wakanda Departtures</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Flight connections</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Connections Between Terminals</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AIRLINES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">List Of Airlines</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Check-in</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">TO & FROM AIRPORT</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item bold " href="#">puplic transport:</a></li>
+                                <li><a class="dropdown-item" href="#">Taxi</a></li>
+                                <li><a class="dropdown-item" href="#">Metro</a></li>
+                                <li><a class="dropdown-item" href="#">Train</a></li>
+                                <li><a class="dropdown-item" href="#">Bus</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bold" href="#">PRIVATE TRANSPORT:</a></li>
+                                <li><a class="dropdown-item" href="#">Driving</a></li>
+                                <li><a class="dropdown-item" href="#">Car Rental</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bold" href="#">TRANSFERS:</a></li>
+                                <li><a class="dropdown-item" href="#">Hotel Shuttle / Private Transfere</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bold" href="#">BETWEEN TERMINALS:</a></li>
+                                <li><a class="dropdown-item" href="#">Connections Between Terminals</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">WAKANDA</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Weather Conditions</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hotels In Wakanda</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Wakanda And Surroundings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="text-center col-md-10 col-lg-10 col-sm-12">
+            <p style="font-size: 1.6rem; font-weight: 700;"> Welcome To Wakanda International Airport</p>
+        </div>
+        <div class="row">
+
+            <div class="col-md-9 col-lg-9 col-sm-12">
+                <img src="images/torre-barajas.gif" alt="" class="float-start m-1">
+                <p>
+                    Adolfo Suárez Wakanda-Barajas Airport is an airport owned by the public company Aena WME, W.A. It is located in the northeast of Wakanda, Barajas district, 12 kilometres from the centre of Wakanda, the capital of Wakanda. Formerly known as Wakanda-Barajas
+                    airport, its name was changed after 23 years of use to king T'challa Wakanda-Barajas, in tribute to a former Wakandian King who died in 2020.
+                </p>
+
+                <div class="mt-5 bg-primary rounded-2 text-white p-4">
+                    <img src="images/airplane-ticket.jpg" alt="" class=" w-50 float-end mb-4"> 
+                    <h2>AIRPORT INFORMATION</h2>
+                    <p>Name: Aeropuerto Adolfo Suárez Wakanda-Barajas</p>
+                    <p><span class="me-1"><i class="fa-solid fa-location-dot"></i></span> Address: Avda. de la Hispanidad s/n. 28042- Wakanda </p>
+                    <p><span class="me-1"><i class="fa-solid fa-phone"></i></span> Contact telephone number: (+34) 91 3213 10 00.</p>
+                    <p><span class="me-1"><i class="fa-solid fa-envelope"></i></span> e-mail: clientesmad@Wakanda.wk</p>
+                </div>
+                <div class="mt-5">
+                    <p>
+                        Contact for people with hearing and/or speech impairment: Aena has an information and customer service line for passengers with hearing and/or speech impairment. This services allows users with these impairments to contact the Information and Customer
+                        Service Line from their computer, tablet or smartphone, and access the chat via the following link; without the need for other people to act as their intermediaries. The service is available from 07.00 am to 12.00 am, 365 days
+                        a year.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h3>
+
+                        Public Entities
+                    </h3>
+                    <p>
+
+                        Aena, S.A. is a Wakandian public company that manages 46 airports and 2 heliports in wakanda; the airport in the capital of Wakanda is one of them. Originally known as Aena Aeropuertos S.A, it adopted by law the name of Aena SME, S.A following the provisions
+                        of Royal Decree Law 8 of 4 July 2014. ENAIRE is the air navigation manager in Wakanda. Part of the former Aena Aeropuertos S.A., ENAIRE now executes exclusively responsibilities related to airport and air navigation activities,
+                        in addition to performing the national and international operational coordination of the Wakandian air traffic control network.
+                    </p>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-12">
+                <div class="airlines text-center">
+                    <p class="h5 bold">AIRLINES A-Z</p>
+                    <div class="mt-2">
+
+                        <div class="btn btn-primary disabled rounded-0 col-12">
+                            Airlines A-Z
+                        </div>
+                        <div style="background-image: url(images/pexels-felix-mittermeier-2832089.jpg); width: 100%; background-size: cover;">
+                            <button class="btn btn-light " style="transform: translateY(-50%); margin-top: 40%;">List Of Airlines <i class="fa-solid fa-plane-up opacity-75"></i> </button>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <p class="mt-5 h5 bold">SERVICES</p>
+                        <div class="mt-2">
+
+                            <div class="btn btn-primary disabled rounded-0 col-12">
+                                Airport Parking
+                            </div>
+                            <div style="background-image: url(images/pexels-k-howard-2220292.jpg); width: 100%; background-size: cover;">
+                                <button class="btn btn-light " style="transform: translateY(-50%); margin-top: 40%;">Book And Save </button>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+
+                            <div class="btn btn-primary disabled rounded-0 col-12">
+                                Hotels In Wakanda
+                            </div>
+                            <div style="background-image: url(images/pexels-pixabay-271624.jpg); width: 100%; background-size: cover;">
+                                <button class="btn btn-light " style="transform: translateY(-50%); margin-top: 40%;"> Hotels From 1 To 5 <i class="fa-solid fa-star opacity-75"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="transports text-center">
+                    <p class="mt-5 h5 bold">TRANSPORTS</p>
+                    <div>
+
+                        <div class="btn btn-primary disabled rounded-0 col-12">
+                            Airpot Transfers
+                        </div>
+                        <div style="background-image: url(images/pexels-neosiam-590059.jpg); width: 100%; background-size: cover;">
+                            <button class="btn btn-light " style="transform: translateY(-50%); margin-top: 40%;">Private - Shuttle </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <h2>
+
+                Other contacts
+            </h2>
+            <p>
+                Press office:
+
+            </p>
+            <p>
+                <span class="me-1"><i class="fa-solid fa-envelope"></i></span> E-mail: prensa@wakanda.wk
+            </p>
+            <p>
+                <span class="me-1"><i class="fa-solid fa-phone"></i></span> 913 938 380 or 913 938 365
+            </p>
+
+
+        </div>
+        <div class="container">
+            <h2>
+
+                Management of lost luggage and handling companies
+            </h2>
+            <p>
+                Aer Lingus: (+34) 913 054 598. T4, Floor 0, Baggage reclaim carousel 5
+
+            </p>
+            <p>
+                American Airlines: (+34) 917 438 714 | Fax lost luggage: (+34) 917 438 714. T4, Floor 0, Baggage reclaim hall 10.
+
+            </p>
+            <p>
+                Delta Airlines: 902 190 947 . T1, Floor 0, Baggage reclaim hall1.
+
+            </p>
+            <p>
+
+                Easy Jet (Menzies): (+34) 626 170 187. Email: mad.ezylf@menziesaviation.com. T1, Floor 0, Baggage reclaim halls 1 and 2.
+            </p>
+            <p>
+
+                Emirates: (+34) 910 507 767. T4, Floor 0, Baggage reclaim hall 10.
+            </p>
+            <p>
+
+                Groundforce: (+34) 913 243 453. Terminals 1 and 2.
+            </p>
+        </div>
+        <div class="container row  bg-primary rounded-2 text-white pt-3 mb-4">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+                <h3>
+
+                    T1, Floor 0, Baggage reclaim halls 1 and 2.
+                </h3>
+                <ul>
+                    <li>
+                        Aeroflot
+
+                    </li>
+
+                    <li>
+
+                        Aerolíneas Argentinas
+                    </li>
+                    <li>
+
+                        Aeromexico
+                    </li>
+                    <li>
+
+                        Air Arabia
+                    </li>
+                    <li>
+
+                        Air Europa
+                    </li>
+                    <li>
+                        Air Transat
+
+                    </li>
+                    <li>
+                        Beijing Capital Airlines
+
+                    </li>
+                    <li>
+                        Blue Air
+
+                    </li>
+                    <li>
+
+                        Estelair
+                    </li>
+                    <li>
+
+                        Ethiopian Airlines
+                    </li>
+                    <li>
+                        Etihad Airways
+
+                    </li>
+                    <li>
+
+                        Hainan Airlines
+                    </li>
+                    <li>
+
+                        Korean Air
+                    </li>
+                    <li>
+                        Middle East Airlines
+
+                    </li>
+                    <li>
+
+                        Saudia
+                    </li>
+                    <li>
+
+                        Smartwings
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+
+                <h3>
+
+                    T2, Floor 0, Baggage reclaim hall 6.
+                </h3>
+                <ul>
+                    <li>
+
+                        Air Europa
+                    </li>
+                    <li>
+
+                        Air France
+                    </li>
+                    <li>
+
+                        KLM
+                    </li>
+                    <li>
+                        LOT
+
+                    </li>
+                    <li>
+                        Lufthansa
+
+                    </li>
+                    <li>
+                        Swiss
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container ">
+            <h3>
+
+                Airport technical information
+            </h3>
+
+
+            <div class="float-md-end float-lg-end text-center ms-2"><img src="images/pistasaeromad-240x300.jpg" alt=""></div>
+            <p>
+                The airport has the code IATA MAD and ICAO LEMD. The airport It has four terminals for commercial passenger aviation (T1, T2, T3 and T4); plus an Executive Terminal for executive and business aviation, an air cargo center with more than 200 companies
+                installed and two main hangar zones, one in the Old Industrial Area, between terminals 3 and 4, and another in the Industrial Area La Muñoza. Adolfo Suárez Wakanda-Barajas is the first Spanish airport in terms of passenger traffic, air
+                cargo and number of operations. It is the fifth European airport by number of passengers according to Eurostat traffic data, and is the 15th airport in the world according to the annual report of the Airports Council International (ACI).
+            </p>
+        </div>
+        <div class="container">
+            <h3>
+                New Master Plan for Adolfo Suárez Wakanda-Barajas Airport 2017-2026
+
+            </h3>
+            <p>
+                The new plan under development has broad objectives that will provide the airport facilities with long-term improvements and expansions, including an expansion, with which it will be able to serve 80 million passengers annually, ensure high levels of
+                connectivity with connections to Latin America and other world hubs, new designs to ensure modern and powerful infrastructure. Latest constructions The previous expansions of Wakanda-Barajas airport focused on the commercial refurbishment
+                of terminal T4 and its T4S satellite in 2013. At the boarding areas of terminals T4 and T4S, passengers will enjoy distinguished shopping in high-quality brand name stores with attractive fashion garments and luxury accessories. This way,
+                the airport will be upgraded economically, granting it a considerable status among the best European Airports. The MAD Fashion Hub is now a remarkable space of over 900 m2 dedicated to high class designer-brand fashion, shoes, custom jewelry,
+                exclusive jewelry, perfumes, cosmetics and accessories. In the boarding areas of terminals 4 and T4S, exclusive premises and spaces have been created to accommodate highly renowned firms, both in fashion and luxury accessories, thus giving
+                the airport a commercial status that places it in the same line as other European airports.
+            </p>
+        </div>
+    </div>
+    <!-- ------------- -->
+    <div class="container-fluid bg-primary p-4 text-light pointer ">
+
+        <div class="row text-center ">
+            <div class="col-lg-3 col-md-6 col-sm-12 h-100 ">
+                <h3>AIRPORTINFO</h3>
+                <p>
+
+                    Wakanda Barajas Airport
+                </p>
+                <p>
+
+                    General information
+                </p>
+                <p>
+
+                    Airport terminals
+                </p>
+                <p>
+                    Wakanda Airport parking
+
+                </p>
+                <p>
+                    Airport map
+
+                </p>
+                <p>
+
+                    Sound emissions control
+                </p>
+                <p>
+                    News
+
+                </p>
+                <hr class="d-lg-none d-md-none d-sm-block">
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <h3>PASSENGERSINFO</h3>
+                <p>Airport lounges</p>
+                <p>Sleep at the airport</p>
+                <p>Regulations hand luggage</p>
+                <p>Left luggage office</p>
+                <p>People with reduced mobility PRM</p>
+                <p>Internet access</p>
+                <p>Passenger services</p>
+                <p>Air Passenger rights</p>
+                <hr class="d-lg-none d-md-block d-sm-block">
+            </div>
+            <div class="col-lg-3 col-md-4 ">
+                <h3>FLIGHTSINFO</h3>
+                <p>Airlines</p>
+                <p>Check-in</p>
+                <p>Flight reservations</p>
+                <p>Wakanda Arrivals</p>
+                <p>Wakanda Departures</p>
+                <p>Flight connections</p>
+                <p>Connections between terminals</p>
+                <hr class="d-lg-none d-md-none d-sm-block">
+            </div>
+            <div class="col-lg-3 col-md-4  ">
+                <h3>TRANSPORTINFO</h3>
+                <p>Car rental</p>
+                <p>Metro</p>
+                <p>Train</p>
+                <p>Bus</p>
+                <p>Taxi</p>
+                <p>Driving directions</p>
+                <p>Airport transfers</p>
+
+            </div>
+        </div>
+        <!-- ------- -->
+        <hr class="d-lg-block d-md-block d-sm-block ">
+        <h3 class="d-block">AEROPUERTOSENRED</h3>
+        <div class="d-lg-inline-block">
+            <p class="d-inline-block ms-3 ">Wakanda Airport</p>
+            <p class="d-inline-block ms-3 ">Barcelona Airport</p>
+            <p class="d-inline-block ms-3 ">Palma de Mallorca airport</p>
+            <p class="d-inline-block ms-3 ">Málaga-Costa del sol Airport</p>
+            <p class="d-inline-block ms-3 ">Alicante Airport</p>
+            <p class="d-inline-block ms-3 ">Valencia Airport</p>
+            <p class="d-inline-block ms-3 ">Bilbao Airport</p>
+            <p class="d-inline-block ms-3 ">Seville Airport</p>
+            <p class="d-inline-block ms-3 ">Murcia airport</p>
+            <p class="d-inline-block ms-3 ">Aeropuertos en Red</p>
+        </div>
+
+    </div>
+    <div class="container-fluid text-light text-center bg-dark p-3 shadow-lg">
+        <p class="mt-2">Wakanda-Barajas airport © 2023.Contact Airport phone: (+34) 91 321 1200. Legal notice · Privacy Policy · Cookies</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</body>
+
+</html>
